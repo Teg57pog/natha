@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('resources/bg.gif') center center fixed;
+    color: white;
+}
+.textContainer .upper {
+    display: flex;          /* Establishes flexbox layout */
+    align-items: center;    /* Centers items vertically (optional) */
+    flex-direction: column; /* Stack items vertically */
+    margin: 0 auto;         /* Centers the box horizontally */
+    max-width: 400px;       /* Sets the maximum width of the box */
+    padding: 0 20px;        /* Optional: Adds padding for better spacing */
+}
+
+.textContainer .upper h1{
+    font-size: 2em;         /* Sets font size */
+    margin: 0;              /* Removes default margin */
+    margin-top: 10px;       /* Adds top margin */
+    font-size: 40px;
+    color: rgb(50, 211, 157);
+    text-shadow: 0 0 10px rgba(50, 211, 157, 0.3), /* First layer of glow */
+    0 0 20px rgba(50, 211, 157, 0.3), /* Second layer of glow */
+    0 0 30px rgba(50, 211, 157, 0.3) /* Third layer of glow */
+}
+
+.textContainer .speach {
+    display: flex;          /* Establishes flexbox layout */
+    align-items: center;    /* Centers items vertically (optional) */
+    flex-direction: column; /* Stack items vertically */
+    margin: 0 auto;         /* Centers the box horizontally */
+    max-width: 400px;       /* Sets the maximum width of the box */
+    padding: 0 20px;        /* Optional: Adds padding for better spacing */
+}

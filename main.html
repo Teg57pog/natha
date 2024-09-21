@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="textContainer">
+        <div class="upper">
+            <h1>natha</h1>
+            <p>quiero dedicarte estas palabras de una forma peculiar, en la que yo se.</p>
+        </div>
+        <div class="speach">
+            <p>has cambiado mucho en mi desde que nos conocimos, hace muchos meses atras. Es increible como pasa el tiempo contigo, pasa tan rápido que no me doy cuenta de lo mucho que hemos pasado juntos, lo mucho que nos conocemos, y lo que queda por adelante. </p>
+            <p>Han pasado <span id="daysCounter"></span> días desde que somos pajera.</p>
+        </div>
+    </div>
+    <script>
+        // Fecha de referencia (19 de agosto de 2024)
+        const startDate = new Date('2024-08-19');
+        
+        // Fecha actual
+        const currentDate = new Date();
+        
+        // Cálculo de la diferencia en milisegundos
+        const differenceInMillis = currentDate - startDate;
+        
+        // Conversión de la diferencia a días
+        const differenceInDays = Math.floor(differenceInMillis / (1000 * 60 * 60 * 24));
+        
+        // Mostrar la diferencia en el elemento con id 'daysCounter'
+        document.getElementById('daysCounter').textContent = differenceInDays;
+    </script>
+</body>
+</html>
