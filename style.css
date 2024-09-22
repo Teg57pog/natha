@@ -1,68 +1,118 @@
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('resources/bg.gif') center center fixed;
-    color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("resources/bg.gif") center center fixed;
+  color: white;
 }
 .textContainer .upper {
-    display: flex;          /* Establishes flexbox layout */
-    align-items: center;    /* Centers items vertically (optional) */
-    flex-direction: column; /* Stack items vertically */
-    margin: 0 auto;         /* Centers the box horizontally */
-    max-width: 400px;       /* Sets the maximum width of the box */
-    padding: 0 20px;        /* Optional: Adds padding for better spacing */
+  display: flex; /* Establishes flexbox layout */
+  align-items: center; /* Centers items vertically (optional) */
+  flex-direction: column; /* Stack items vertically */
+  margin: 0 auto; /* Centers the box horizontally */
+  max-width: 400px; /* Sets the maximum width of the box */
+  padding: 0 20px; /* Optional: Adds padding for better spacing */
 }
 
-.textContainer .upper h1{
-    font-size: 2em;         /* Sets font size */
-    margin: 0;              /* Removes default margin */
-    margin-top: 10px;       /* Adds top margin */
-    font-size: 40px;
-    color: rgb(50, 211, 157);
-    text-shadow: 0 0 10px rgba(50, 211, 157, 0.3), /* First layer of glow */
-    0 0 20px rgba(50, 211, 157, 0.3), /* Second layer of glow */
-    0 0 30px rgba(50, 211, 157, 0.3) /* Third layer of glow */
+.textContainer .upper h1 {
+  font-size: 2em; /* Sets font size */
+  margin: 0; /* Removes default margin */
+  margin-top: 10px; /* Adds top margin */
+  font-size: 40px;
+  color: rgb(50, 211, 157);
+  text-shadow: 0 0 10px rgba(50, 211, 157, 0.3),
+    /* First layer of glow */ 0 0 20px rgba(50, 211, 157, 0.3),
+    /* Second layer of glow */ 0 0 30px rgba(50, 211, 157, 0.3); /* Third layer of glow */
 }
 
 .heart {
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .heart img {
-    width: 30px;
-    height: 100%;
+  width: 30px;
+  height: 100%;
 }
 
 .textContainer .speach {
-    display: flex;          /* Establishes flexbox layout */
-    align-items: center;    /* Centers items vertically (optional) */
-    flex-direction: column; /* Stack items vertically */
-    margin: 0 auto;         /* Centers the box horizontally */
-    max-width: 400px;       /* Sets the maximum width of the box */
-    padding: 0 20px;        /* Optional: Adds padding for better spacing */
+  display: flex; /* Establishes flexbox layout */
+  align-items: center; /* Centers items vertically (optional) */
+  flex-direction: column; /* Stack items vertically */
+  margin: 0 auto; /* Centers the box horizontally */
+  max-width: 400px; /* Sets the maximum width of the box */
+  padding: 0 20px; /* Optional: Adds padding for better spacing */
+}
+
+.textContainer .importantDates {
+  display: flex; /* Establishes flexbox layout */
+  align-items: center; /* Centers items vertically (optional) */
+  flex-direction: column; /* Stack items vertically */
+  margin: 0 auto; /* Centers the box horizontally */
+  max-width: 400px; /* Sets the maximum width of the box */
+  padding: 0 20px; /* Optional: Adds padding for better spacing */
+}
+
+.importantDates .year {
+    font-size: 1.5em; /* Sets font size */
+    margin: 0; /* Removes default margin */
+    margin-top: 10px; /* Adds top margin */
+    margin-bottom: 10px; /* Adds bottom margin */
+    font-size: 30px;
+    color: rgb(50, 211, 157);
+    text-shadow: 0 0 10px rgba(50, 211, 157, 0.3),
+        /* First layer of glow */ 0 0 20px rgba(50, 211, 157, 0.3),
+        /* Second layer of glow */ 0 0 30px rgba(50, 211, 157, 0.3); /* Third layer of glow */
+}
+
+.fecha-importante {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.circulo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.493);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.descripcion {
+  flex: 1;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+.descripcion p {
+  margin: 0;
 }
 
 .textContainer .links {
-    display: flex;          /* Establishes flexbox layout */
-    align-items: center;    /* Centers items vertically (optional) */
-    flex-direction: column; /* Stack items vertically */
-    margin: 0 auto;         /* Centers the box horizontally */
-    max-width: 400px;       /* Sets the maximum width of the box */
-    padding: 0 20px;        /* Optional: Adds padding for better spacing */
-    margin-top: 10px;
+  display: flex; /* Establishes flexbox layout */
+  align-items: center; /* Centers items vertically (optional) */
+  flex-direction: column; /* Stack items vertically */
+  margin: 0 auto; /* Centers the box horizontally */
+  max-width: 400px; /* Sets the maximum width of the box */
+  padding: 0 20px; /* Optional: Adds padding for better spacing */
+  margin-top: 10px;
 }
 
 .links a {
-    color: rgb(50, 211, 157);
-    text-shadow: 0 0 10px rgba(50, 211, 157, 0.3), /* First layer of glow */
-    0 0 20px rgba(50, 211, 157, 0.3), /* Second layer of glow */
-    0 0 30px rgba(50, 211, 157, 0.3) /* Third layer of glow */
+  color: rgb(50, 211, 157);
+  text-shadow: 0 0 10px rgba(50, 211, 157, 0.3),
+    /* First layer of glow */ 0 0 20px rgba(50, 211, 157, 0.3),
+    /* Second layer of glow */ 0 0 30px rgba(50, 211, 157, 0.3); /* Third layer of glow */
 }
 
 .links a:hover {
-    color: white;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), /* First layer of glow */
-    0 0 20px rgba(255, 255, 255, 0.3), /* Second layer of glow */
-    0 0 30px rgba(255, 255, 255, 0.3) /* Third layer of glow */
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    /* First layer of glow */ 0 0 20px rgba(255, 255, 255, 0.3),
+    /* Second layer of glow */ 0 0 30px rgba(255, 255, 255, 0.3); /* Third layer of glow */
 }
